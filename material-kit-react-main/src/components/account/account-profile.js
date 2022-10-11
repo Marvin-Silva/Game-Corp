@@ -6,16 +6,17 @@ import {
   CardActions,
   CardContent,
   Divider,
-  Typography
+  Typography,
+  LinearProgress
 } from '@mui/material';
 
 const user = {
-  avatar: '/static/images/avatars/avatar_6.png',
-  city: 'Los Angeles',
-  country: 'USA',
-  jobTitle: 'Senior Developer',
-  name: 'Katarina Smith',
-  timezone: 'GTM-7'
+  avatar: '/static/images/avatars/avatar_1.png',
+  city: 'Paris',
+  country: 'France',
+  jobTitle: 'Developer',
+  name: 'John Smith',
+  timezone: 'GTM-1'
 };
 
 export const AccountProfile = (props) => (
@@ -43,6 +44,10 @@ export const AccountProfile = (props) => (
         >
           {user.name}
         </Typography>
+        <Box sx={{ pt: 3 }}>
+          <LinearProgress variant="determinate"
+            value={70} />
+        </Box>
         <Typography
           color="textSecondary"
           variant="body2"
