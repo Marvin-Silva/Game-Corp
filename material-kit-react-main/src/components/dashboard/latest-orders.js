@@ -26,7 +26,7 @@ const orders = [
       name: 'Ekaterina Tankova'
     },
     createdAt: 1555016400000,
-    status: 'pending'
+    status: 'En progress'
   },
   {
     id: uuid(),
@@ -36,7 +36,7 @@ const orders = [
       name: 'Cao Yu'
     },
     createdAt: 1555016400000,
-    status: 'delivered'
+    status: 'Done'
   },
   {
     id: uuid(),
@@ -46,7 +46,7 @@ const orders = [
       name: 'Alexa Richardson'
     },
     createdAt: 1554930000000,
-    status: 'refunded'
+    status: 'Ready'
   },
   {
     id: uuid(),
@@ -56,7 +56,7 @@ const orders = [
       name: 'Anje Keizer'
     },
     createdAt: 1554757200000,
-    status: 'pending'
+    status: 'En progress'
   },
   {
     id: uuid(),
@@ -66,7 +66,7 @@ const orders = [
       name: 'Clarke Gillebert'
     },
     createdAt: 1554670800000,
-    status: 'delivered'
+    status: 'Done'
   },
   {
     id: uuid(),
@@ -76,20 +76,20 @@ const orders = [
       name: 'Adam Denisov'
     },
     createdAt: 1554670800000,
-    status: 'delivered'
+    status: 'Done'
   }
 ];
 
 export const LatestOrders = (props) => (
   <Card {...props}>
-    <CardHeader title="Latest Orders" />
+    <CardHeader title="Latest Rewards" />
     <PerfectScrollbar>
       <Box sx={{ minWidth: 800 }}>
         <Table>
           <TableHead>
             <TableRow>
               <TableCell>
-                Order Ref
+                Reward Ref
               </TableCell>
               <TableCell>
                 Customer

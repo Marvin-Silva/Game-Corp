@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { Box, Container, Grid } from '@mui/material';
-import { Budget } from '../components/dashboard/budget';
+import { Box, Container, Grid, Typography } from '@mui/material';
+// import { Budget } from '../components/dashboard/budget';
 import { LatestOrders } from '../components/dashboard/latest-orders';
 import { LatestProducts } from '../components/dashboard/latest-products';
 import { Sales } from '../components/dashboard/sales';
@@ -17,6 +17,19 @@ const Page = () => (
         Dashboard | Material Kit
       </title>
     </Head>
+    <div>
+      <Typography
+        sx={{
+          textAlign:'center',
+          marginTop: '50px',
+          fontSize: '40px',
+          fontWeight: 'Bolder',
+        }}
+      >Bonjour John Doe,
+      </Typography>
+      <br/>
+    </div>
+
     <Box
       component="main"
       sx={{
@@ -31,24 +44,6 @@ const Page = () => (
         >
           <Grid
             item
-            lg={3}
-            sm={6}
-            xl={3}
-            xs={12}
-          >
-            <Budget />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TotalCustomers />
-          </Grid>
-          <Grid
-            item
             xl={3}
             lg={3}
             sm={6}
@@ -58,30 +53,30 @@ const Page = () => (
           </Grid>
           <Grid
             item
+            lg={3}
+            sm={6}
+            xl={3}
+            xs={12}
+          >
+            {/*<Budget />*/}
+          </Grid>
+          <Grid
+            item
             xl={3}
             lg={3}
             sm={6}
             xs={12}
           >
-            <TotalProfit sx={{ height: '100%' }} />
+            {/*<TotalCustomers />*/}
           </Grid>
           <Grid
             item
-            lg={8}
-            md={12}
-            xl={9}
-            xs={12}
-          >
-            <Sales />
-          </Grid>
-          <Grid
-            item
-            lg={4}
-            md={6}
             xl={3}
+            lg={3}
+            sm={6}
             xs={12}
           >
-            <TrafficByDevice sx={{ height: '100%' }} />
+            {/*<TotalProfit sx={{ height: '100%' }} />*/}
           </Grid>
           <Grid
             item

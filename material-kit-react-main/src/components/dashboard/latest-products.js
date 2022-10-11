@@ -15,35 +15,35 @@ import {
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-const products = [
+const avatars = [
   {
     id: uuid(),
-    name: 'Dropbox',
-    imageUrl: '/static/images/products/product_1.png',
+    name: 'Elodie Renauld',
+    imageUrl: '/static/images/avatars/avatar_2.png',
     updatedAt: subHours(Date.now(), 2)
   },
   {
     id: uuid(),
-    name: 'Medium Corporation',
-    imageUrl: '/static/images/products/product_2.png',
+    name: 'Joseph Alain',
+    imageUrl: '/static/images/avatars/avatar_3.png',
     updatedAt: subHours(Date.now(), 2)
   },
   {
     id: uuid(),
-    name: 'Slack',
-    imageUrl: '/static/images/products/product_3.png',
+    name: 'Jean Claude',
+    imageUrl: '/static/images/avatars/avatar_4.png',
     updatedAt: subHours(Date.now(), 3)
   },
   {
     id: uuid(),
-    name: 'Lyft',
-    imageUrl: '/static/images/products/product_4.png',
+    name: 'Lucas Studio',
+    imageUrl: '/static/images/avatars/avatar_5.png',
     updatedAt: subHours(Date.now(), 5)
   },
   {
     id: uuid(),
-    name: 'GitHub',
-    imageUrl: '/static/images/products/product_5.png',
+    name: 'Marianna Cabral',
+    imageUrl: '/static/images/avatars/avatar_6.png',
     updatedAt: subHours(Date.now(), 9)
   }
 ];
@@ -51,20 +51,20 @@ const products = [
 export const LatestProducts = (props) => (
   <Card {...props}>
     <CardHeader
-      subtitle={`${products.length} in total`}
-      title="Latest Products"
+      subtitle={`${avatars.length} in total`}
+      title="Chat "
     />
     <Divider />
     <List>
-      {products.map((product, i) => (
+      {avatars.map((avatar, i) => (
         <ListItem
-          divider={i < products.length - 1}
-          key={product.id}
+          divider={i < avatars.length - 1}
+          key={avatar.id}
         >
           <ListItemAvatar>
             <img
-              alt={product.name}
-              src={product.imageUrl}
+              alt={avatar.name}
+              src={avatar.imageUrl}
               style={{
                 height: 48,
                 width: 48
@@ -72,8 +72,8 @@ export const LatestProducts = (props) => (
             />
           </ListItemAvatar>
           <ListItemText
-            primary={product.name}
-            secondary={`Updated ${formatDistanceToNow(product.updatedAt)}`}
+            primary={avatar.name}
+            secondary={`Active`}
           />
           <IconButton
             edge="end"
