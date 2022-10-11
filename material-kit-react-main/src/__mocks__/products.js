@@ -4,49 +4,49 @@ export const products = [
   {
     id: uuid(),
     createdAt: '27/03/2019',
-    description: 'Certification ',
-    media: '/static/images/products/product_1.png',
+    description: 'Certification au choix (AWS, Azure, Google Cloud, DevOps, Scrum, Agile, etc.)',
+    media: '/static/images/products/certif.png',
     title: 'Certification',
     totalDownloads: '594 / 600'
   },
   {
     id: uuid(),
     createdAt: '31/03/2019',
-    description: 'Medium is an online publishing platform developed by Evan Williams, and launched in August 2012.',
-    media: '/static/images/products/product_2.png',
-    title: 'Medium Corporation',
-    totalDownloads: '625'
+    description: 'Carte cadeau parmis une selection de 1000+ enseignes',
+    media: '/static/images/products/card.png',
+    title: 'Carte Cadeaux',
+    totalDownloads: '150 / 200'
   },
   {
     id: uuid(),
     createdAt: '03/04/2019',
-    description: 'Slack is a cloud-based set of team collaboration tools and services, founded by Stewart Butterfield.',
-    media: '/static/images/products/product_3.png',
-    title: 'Slack',
-    totalDownloads: '857'
+    description: 'Lot d\'accessoires pour le bureau',
+    media: '/static/images/products/equipement.png',
+    title: 'Equipement de bureau',
+    totalDownloads: '346 / 500'
   },
   {
     id: uuid(),
     createdAt: '04/04/2019',
-    description: 'Lyft is an on-demand transportation company based in San Francisco, California.',
-    media: '/static/images/products/product_4.png',
-    title: 'Lyft',
-    totalDownloads: '406'
+    description: 'Ticket de cinéma à utiliser dans un cinéma de votre choix',
+    media: '/static/images/products/ticket.png',
+    title: 'Ticket de cinema',
+    totalDownloads: '80 / 100'
   },
   {
     id: uuid(),
     createdAt: '04/04/2019',
-    description: 'GitHub is a web-based hosting service for version control of code using Git.',
-    media: '/static/images/products/product_5.png',
-    title: 'GitHub',
-    totalDownloads: '835'
+    description: 'Bon pour un week-end pour 1 ou 2 personnes dans un hôtel de votre choix',
+    media: '/static/images/products/hotel.png',
+    title: 'Week-end gastronomique',
+    totalDownloads: '1176 / 1500'
   },
   {
     id: uuid(),
     createdAt: '04/04/2019',
-    description: 'Squarespace provides software as a service for website building and hosting. Headquartered in NYC.',
-    media: '/static/images/products/product_6.png',
-    title: 'Squarespace',
-    totalDownloads: '835'
+    description: 'Séance de bien-être dans un spa de votre choix (massage, soin du visage, etc.)',
+    media: '/static/images/products/spa.png',
+    title: 'Séance bien-être',
+    totalDownloads: '835 / 1000'
   }
 ];
