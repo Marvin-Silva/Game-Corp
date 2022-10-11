@@ -18,30 +18,20 @@ export const TasksProgress = (props) => (
             gutterBottom
             variant="overline"
           >
-            TASKS PROGRESS
+            PROGRESS LEVEL 2
           </Typography>
           <Typography
             color="textPrimary"
             variant="h4"
           >
-            75.5%
+            78%
           </Typography>
         </Grid>
-        <Grid item>
-          <Avatar
-            sx={{
-              backgroundColor: 'warning.main',
-              height: 56,
-              width: 56
-            }}
-          >
-            <InsertChartIcon />
-          </Avatar>
-        </Grid>
+
       </Grid>
-      <Box sx={{ pt: 3 }}>
+      <Box sx={{ pt: 3, width: 250 }}>
         <LinearProgress
-          value={75.5}
+          value={78}
           variant="determinate"
         />
       </Box>

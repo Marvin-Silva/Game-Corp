@@ -6,9 +6,10 @@ import {
   CardActions,
   CardContent,
   Divider,
-  Typography,
-  LinearProgress
+  Typography
 } from '@mui/material';
+
+import { TasksProgress } from '../dashboard/tasks-progress.js';
 
 const user = {
   avatar: '/static/images/avatars/avatar_1.png',
@@ -44,15 +45,21 @@ export const AccountProfile = (props) => (
         >
           {user.name}
         </Typography>
-        <Box sx={{ pt: 3 }}>
-          <LinearProgress variant="determinate"
-                          value={70} />
-        </Box>
+
+        <Typography
+          color="textPrimary"
+          gutterBottom
+          variant="h8"
+        >
+          {user.jobTitle}
+        </Typography>
+        <TasksProgress />
+
         <Typography
           color="textSecondary"
           variant="body2"
         >
-          {`${user.city} ${user.country}`}
+          {`${user.city}, ${user.country}`}
         </Typography>
         <Typography
           color="textSecondary"
