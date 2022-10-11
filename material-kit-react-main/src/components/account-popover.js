@@ -77,7 +77,7 @@ export const AccountPopover = (props) => {
           color="text.secondary"
           variant="body2"
         >
-          John Smith
+          John Doe
         </Typography>
       </Box>
       <MenuList

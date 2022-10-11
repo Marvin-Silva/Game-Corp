@@ -10,14 +10,29 @@ import {
   TextField
 } from '@mui/material';
 
+const states = [
+  {
+    value: 'alabama',
+    label: 'Alabama'
+  },
+  {
+    value: 'new-york',
+    label: 'New York'
+  },
+  {
+    value: 'san-francisco',
+    label: 'San Francisco'
+  }
+];
+
 export const AccountProfileDetails = (props) => {
   const [values, setValues] = useState({
-    firstName: 'John',
+    firstName: 'Katarina',
     lastName: 'Smith',
-    email: 'test@test.com',
-    phone: '0707070707',
-    city: 'Paris',
-    country: 'France'
+    email: 'demo@devias.io',
+    phone: '',
+    state: 'Alabama',
+    country: 'USA'
   });
 
   const handleChange = (event) => {
@@ -127,13 +142,24 @@ export const AccountProfileDetails = (props) => {
             >
               <TextField
                 fullWidth
-                label="City"
-                name="city"
+                label="Select State"
+                name="state"
                 onChange={handleChange}
                 required
-                value={values.city}
+                select
+                SelectProps={{ native: true }}
+                value={values.state}
                 variant="outlined"
-              />
+              >
+                {states.map((option) => (
+                  <option
+                    key={option.value}
+                    value={option.value}
+                  >
+                    {option.label}
+                  </option>
+                ))}
+              </TextField>
             </Grid>
           </Grid>
         </CardContent>
