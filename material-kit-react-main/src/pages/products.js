@@ -9,7 +9,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Products | Material Kit
+        Rewards
       </title>
     </Head>
     <Box
