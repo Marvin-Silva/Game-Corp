@@ -2,49 +2,45 @@ import { useEffect } from 'react';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
-import { Box, Button, Divider, Drawer, Typography, useMediaQuery } from '@mui/material';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { Box, Divider, Drawer, Typography, useMediaQuery } from '@mui/material';
 import { ChartBar as ChartBarIcon } from '../icons/chart-bar';
 import { Cog as CogIcon } from '../icons/cog';
-import { Lock as LockIcon } from '../icons/lock';
 import { Selector as SelectorIcon } from '../icons/selector';
 import { ShoppingBag as ShoppingBagIcon } from '../icons/shopping-bag';
 import { User as UserIcon } from '../icons/user';
-import { UserAdd as UserAddIcon } from '../icons/user-add';
 import { Users as UsersIcon } from '../icons/users';
-import { XCircle as XCircleIcon } from '../icons/x-circle';
 import { Logo } from './logo';
 import { NavItem } from './nav-item';
 
 const items = [
   {
     href: '/',
-    icon: (<ChartBarIcon fontSize="small" />),
+    icon: (<ChartBarIcon fontSize="small"/>),
     title: 'Home'
   },
   {
-    href: '/success',
-    icon: (<ShoppingBagIcon fontSize="small" />),
+    href: '/customers',
+    icon: (<ShoppingBagIcon fontSize="small"/>),
     title: 'Success'
   },
   {
     href: '/workpass',
-    icon: (<UsersIcon fontSize="small" />),
+    icon: (<UsersIcon fontSize="small"/>),
     title: 'Work Pass'
   },
   {
     href: '/products',
-    icon: (<SelectorIcon fontSize="small" />),
+    icon: (<SelectorIcon fontSize="small"/>),
     title: 'Rewards'
   },
   {
     href: '/account',
-    icon: (<UserIcon fontSize="small" />),
+    icon: (<UserIcon fontSize="small"/>),
     title: 'Account'
   },
   {
     href: '/settings',
-    icon: (<CogIcon fontSize="small" />),
+    icon: (<CogIcon fontSize="small"/>),
     title: 'Settings'
   }
 ];
@@ -120,9 +116,9 @@ export const DashboardSidebar = (props) => {
                   color="neutral.400"
                   variant="body2"
                 >
-                  Votre rang
+                  Your rank
                   {' '}
-                  : Developpeur
+                  : Developer
                 </Typography>
               </div>
             </Box>
@@ -144,7 +140,7 @@ export const DashboardSidebar = (props) => {
             />
           ))}
         </Box>
-        <Divider sx={{ borderColor: '#2D3748' }} />
+        <Divider sx={{ borderColor: '#2D3748' }}/>
       </Box>
     </>
   );
