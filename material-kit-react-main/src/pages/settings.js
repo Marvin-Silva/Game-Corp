@@ -26,9 +26,6 @@ const Page = () => (
           Settings
         </Typography>
         <SettingsNotifications />
-        <Box sx={{ pt: 3 }}>
-          <SettingsPassword />
-        </Box>
       </Container>
     </Box>
   </>

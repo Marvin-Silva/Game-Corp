@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
-import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
-import { Box, Divider, Drawer, Typography, useMediaQuery } from '@mui/material';
+import { Avatar, Box, Divider, Drawer, Grid, Typography, useMediaQuery } from '@mui/material';
 import { ChartBar as ChartBarIcon } from '../icons/chart-bar';
 import { Cog as CogIcon } from '../icons/cog';
 import { Selector as SelectorIcon } from '../icons/selector';
@@ -78,19 +77,28 @@ export const DashboardSidebar = (props) => {
       >
         <div>
           <Box sx={{ p: 3 }}>
-            <NextLink
-              href="/"
-              passHref
+            <Grid
+              container
+              spacing={3}
+              sx={{ justifyContent: 'space-between' }}
             >
-              <a>
-                <Logo
-                  sx={{
-                    height: 42,
-                    width: 42
-                  }}
+              <Grid item>
+                <Avatar
+                  src={'/static/images/GC2.png'}
+                  alt="Game Corp Logo"
                 />
-              </a>
-            </NextLink>
+              </Grid>
+              <Grid item>
+                <Typography
+                  align="baseline"
+                >
+                  Game Corp ®
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Box></Box>
+              </Grid>
+            </Grid>
           </Box>
           <Box sx={{ px: 2 }}>
             <Box
