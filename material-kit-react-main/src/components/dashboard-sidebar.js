@@ -33,7 +33,7 @@ const items = [
     title: 'Work Pass'
   },
   {
-    href: '/products',
+    href: '/rewards',
     icon: (<SelectorIcon fontSize="small" />),
     title: 'Rewards'
   },
