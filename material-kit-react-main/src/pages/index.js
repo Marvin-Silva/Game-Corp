@@ -23,7 +23,7 @@ const Page = () => (
           color: "rgb(75,0,130)"
         }}
       >
-        Bonjour John Doe,
+        Bonjour John 🌞 !
       </Typography>
       <br/>
     </div>

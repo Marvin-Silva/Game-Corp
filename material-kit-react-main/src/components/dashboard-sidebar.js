@@ -18,7 +18,7 @@ const items = [
     title: 'Home'
   },
   {
-    href: '/customers',
+    href: '/success',
     icon: (<ShoppingBagIcon fontSize="small" />),
     title: 'Success'
   },
