@@ -15,32 +15,32 @@ import { NavItem } from './nav-item';
 const items = [
   {
     href: '/',
-    icon: (<ChartBarIcon fontSize="small"/>),
+    icon: (<ChartBarIcon fontSize="small" />),
     title: 'Home'
   },
   {
     href: '/customers',
-    icon: (<ShoppingBagIcon fontSize="small"/>),
+    icon: (<ShoppingBagIcon fontSize="small" />),
     title: 'Success'
   },
   {
     href: '/workpass',
-    icon: (<UsersIcon fontSize="small"/>),
+    icon: (<UsersIcon fontSize="small" />),
     title: 'Work Pass'
   },
   {
-    href: '/products',
-    icon: (<SelectorIcon fontSize="small"/>),
+    href: '/rewards',
+    icon: (<SelectorIcon fontSize="small" />),
     title: 'Rewards'
   },
   {
     href: '/account',
-    icon: (<UserIcon fontSize="small"/>),
+    icon: (<UserIcon fontSize="small" />),
     title: 'Account'
   },
   {
     href: '/settings',
-    icon: (<CogIcon fontSize="small"/>),
+    icon: (<CogIcon fontSize="small" />),
     title: 'Settings'
   }
 ];
@@ -140,7 +140,7 @@ export const DashboardSidebar = (props) => {
             />
           ))}
         </Box>
-        <Divider sx={{ borderColor: '#2D3748' }}/>
+        <Divider sx={{ borderColor: '#2D3748' }} />
       </Box>
     </>
   );
