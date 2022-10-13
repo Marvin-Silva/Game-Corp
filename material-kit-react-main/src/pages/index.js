@@ -4,12 +4,13 @@ import { LatestOrders } from '../components/dashboard/latest-orders';
 import { LatestProducts } from '../components/dashboard/latest-products';
 
 import { DashboardLayout } from '../components/dashboard-layout';
+import { TasksProgress } from '../components/dashboard/tasks-progress';
 
 const Page = () => (
   <>
     <Head>
       <title>
-        Dashboard | Material Kit
+        Home | Game Corp
       </title>
     </Head>
     <div>

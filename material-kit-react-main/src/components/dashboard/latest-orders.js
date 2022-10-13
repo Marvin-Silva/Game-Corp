@@ -130,7 +130,7 @@ export const LatestOrders = (props) => (
                 <TableCell>
                   <SeverityPill
                     color={(order.status === 'Done' && 'success')
-                    || (order.status === 'En progress' && 'info')
+                    || (order.status === 'In progress' && 'info')
                     || 'warning'}
                   >
                     {order.status}
