@@ -129,8 +129,8 @@ export const LatestOrders = (props) => (
                 </TableCell>
                 <TableCell>
                   <SeverityPill
-                    color={(order.status === 'delivered' && 'success')
-                    || (order.status === 'refunded' && 'error')
+                    color={(order.status === 'Done' && 'success')
+                    || (order.status === 'En progress' && 'info')
                     || 'warning'}
                   >
                     {order.status}
