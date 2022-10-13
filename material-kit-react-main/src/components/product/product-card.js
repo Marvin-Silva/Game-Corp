@@ -83,7 +83,7 @@ export const ProductCard = ({ product, ...rest }) => (
           >
             {product.totalDownloads}
             {' '}
-            Downloads
+            Success
           </Typography>
         </Grid>
       </Grid>

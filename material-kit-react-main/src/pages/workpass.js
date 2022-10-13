@@ -1,14 +1,13 @@
 import Head from 'next/head';
 import { Box, Container, Typography } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
-import { SettingsNotifications } from '../components/settings/settings-notifications';
-import { SettingsPassword } from '../components/settings/settings-password';
+import { TasksProgress2 } from '../components/dashboard/tasks-progress2';
 
 const Page = () => (
   <>
     <Head>
       <title>
-        Settings | Material Kit
+        WorkPass
       </title>
     </Head>
     <Box
@@ -23,9 +22,9 @@ const Page = () => (
           sx={{ mb: 3 }}
           variant="h4"
         >
-          Settings
+          Work Pass
         </Typography>
-        <SettingsNotifications />
+        <TasksProgress2/>
       </Container>
     </Box>
   </>

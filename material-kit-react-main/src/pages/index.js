@@ -1,22 +1,33 @@
 import Head from 'next/head';
-import { Box, Container, Grid } from '@mui/material';
-import { Budget } from '../components/dashboard/budget';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import { LatestOrders } from '../components/dashboard/latest-orders';
 import { LatestProducts } from '../components/dashboard/latest-products';
-import { Sales } from '../components/dashboard/sales';
-import { TasksProgress } from '../components/dashboard/tasks-progress';
-import { TotalCustomers } from '../components/dashboard/total-customers';
-import { TotalProfit } from '../components/dashboard/total-profit';
-import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
+
 import { DashboardLayout } from '../components/dashboard-layout';
+import { TasksProgress } from '../components/dashboard/tasks-progress';
 
 const Page = () => (
   <>
     <Head>
       <title>
-        Dashboard | Material Kit
+        Home | Game Corp
       </title>
     </Head>
+    <div>
+      <Typography
+        sx={{
+          textAlign:'center',
+          marginTop: '50px',
+          fontSize: '40px',
+          fontWeight: 'Bolder',
+          color: "rgb(75,0,130)"
+        }}
+      >
+        Bonjour John 🌞 !
+      </Typography>
+      <br/>
+    </div>
+
     <Box
       component="main"
       sx={{
@@ -29,60 +40,6 @@ const Page = () => (
           container
           spacing={3}
         >
-          <Grid
-            item
-            lg={3}
-            sm={6}
-            xl={3}
-            xs={12}
-          >
-            <Budget />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TotalCustomers />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TasksProgress />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TotalProfit sx={{ height: '100%' }} />
-          </Grid>
-          <Grid
-            item
-            lg={8}
-            md={12}
-            xl={9}
-            xs={12}
-          >
-            <Sales />
-          </Grid>
-          <Grid
-            item
-            lg={4}
-            md={6}
-            xl={3}
-            xs={12}
-          >
-            <TrafficByDevice sx={{ height: '100%' }} />
-          </Grid>
           <Grid
             item
             lg={4}

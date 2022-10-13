@@ -95,10 +95,27 @@ const Page = () => (
           >
             <Box
               sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <Typography
+                sx={{ mb: 3 }}
+                variant="h9"
+              >
+                LEVEL 2 - Corp Inc
+              </Typography>
+            </Box>
+
+
+            <Box
+              sx={{
                 height: 300,
                 position: 'relative'
               }}
             >
+
               <Doughnut
                 data={data}
                 options={options}
