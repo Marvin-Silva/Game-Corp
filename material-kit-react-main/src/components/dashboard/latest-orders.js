@@ -26,7 +26,7 @@ const orders = [
       name: 'Ekaterina Tankova'
     },
     createdAt: 1555016400000,
-    status: 'En progress'
+    status: 'In progress'
   },
   {
     id: uuid(),
@@ -56,7 +56,7 @@ const orders = [
       name: 'Anje Keizer'
     },
     createdAt: 1554757200000,
-    status: 'En progress'
+    status: 'In progress'
   },
   {
     id: uuid(),
